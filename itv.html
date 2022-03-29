@@ -1,269 +1,525 @@
-<link rel="stylesheet" href="<?php echo base_url('public/pingfest/css/itv.min.css'); ?>" />
-<link rel="stylesheet" href="<?php echo base_url('public/pingfest/css/sponsorlogo.min.css'); ?>" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Home</title>
 
+    <script src="public/jquery/js/jquery-3.6.0.min.js"></script>
+    <script src="public/pingfest/js/static/pingfest-theme.js"></script>
+    <script src="public/pingfest/js/header.min.js"></script>
+    <script src="public/popper/js/popper.min.js"></script>
+    <script src="public/bootstrap/js/bootstrap.min.js"></script>
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-    style="display: none">
-    <symbol viewBox="0 0 36.1 25.8" id="button-arrow">
-        <line x1="0" y1="12.9" x2="34" y2="12.9"></line>
-        <polyline fill="none" points="22.2,1.1 34,12.9 22.2,24.7"></polyline>
-    </symbol>
-</svg>
+    <link rel="stylesheet" href="public/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="public/pingfest/css/header.min.css" />
 
-<div class="headline">
-    <div class="item-headline">
-        <h1>Uji Kemampuanmu di</h1>
-        <h1 class="auto-scroll">IT-Venture XIV</h1>
-        <div class="riseit-container">
-            <div style="--i:1" class="hay-text">R</div>
-            <div style="--i:2" class="hay-text">i</div>
-            <div style="--i:3" class="hay-text">s</div>
-            <div style="--i:4" class="hay-text">e&nbsp;</div>
-            <div style="--i:5" class="hay-text">I</div>
-            <div style="--i:6" class="hay-text">T</div>
+    <link href="public/pingfest/img/ping.png" rel="icon" />
+    <link href="public/pingfest/img/ping.png" rel="apple-touch-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="public/pingfest/css/itv.min.css" />
+    <link rel="stylesheet" href="public/pingfest/css/footer.min.css" />
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="public/pingfest/css/sponsorlogo.min.css" />
+    <link rel="stylesheet" href="public/pingfest/css/sponsorlogo.min.css" />
+    <script src="public/pingfest/js/itv.min.js"></script>
+  </head>
+
+  <body>
+    <div style="display: flex; flex-direction: column; min-height: 100vh">
+      <div style="flex: 1 0 auto">
+        <header class="site-header sticky">
+          <div class="logo-ping">
+            <a href="<?php echo site_url(); ?>">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="238.775"
+                height="266.484"
+                viewBox="0 0 238.775 266.484"
+              >
+                <g transform="translate(-1157.573 -225.786)">
+                  <path
+                    d="M1376.545,282.532c-23.578-24.82-89.84-.151-148,55.1s-86.2,120.16-62.617,144.98,89.84.151,148-55.1S1400.124,307.352,1376.545,282.532Zm-65.977,134.112c-49.563,47.084-105.993,68.146-126.038,47.045s3.883-76.377,53.446-123.46,105.993-68.146,126.038-47.045S1360.131,369.561,1310.568,416.644Z"
+                  />
+                  <path
+                    d="M1319.153,394.746c-14.779-35.55-34.456-61.17-43.95-57.224s-5.209,35.966,9.57,71.516,34.456,61.171,43.95,57.224S1333.932,430.3,1319.153,394.746ZM1323.3,453.7c-8.132,3.38-24.817-18.16-37.269-48.111s-15.953-56.972-7.822-60.352,24.817,18.16,37.268,48.111S1331.433,450.323,1323.3,453.7Z"
+                  />
+                  <path
+                    d="M1324.745,292.414c-54.379-55.479-117.855-81.445-141.779-58s.766,87.433,55.144,142.912,117.855,81.445,141.778,58S1379.123,347.893,1324.745,292.414Zm46.21,131.472c-17.951,17.6-66.117-2.436-107.582-44.74s-60.528-90.862-42.577-108.457,66.117,2.436,107.583,44.74S1388.906,406.291,1370.955,423.886Z"
+                  />
+                  <path
+                    d="M1395.473,362.164c-7.209-23.447-57.016-28.938-111.248-12.265s-92.353,49.2-85.145,72.642,57.016,28.938,111.248,12.265S1402.681,385.61,1395.473,362.164Zm-85.184,62.388c-46.013,14.146-88.088,10.083-93.978-9.075s26.636-46.157,72.649-60.3,88.088-10.082,93.978,9.076S1356.3,410.407,1310.289,424.552Z"
+                  />
+                </g>
+              </svg>
+              <span>Pingfest</span>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="<?php echo site_url(); ?>" class="header-nav-link">
+                Home</a
+              >
+            </li>
+            <li>
+              <a href="<?php echo site_url('itv" class="header-nav-link">
+                IT-Venture</a
+              >
+            </li>
+            <li>
+              <a href="<?php echo site_url('semnas" class="header-nav-link">
+                Semnas</a
+              >
+            </li>
+            <li>
+              <!-- <?php if (isset($_SESSION['user_id'])): ?>
+                        <a href="<?php echo site_url('profile" class="login-link"> Profile</a>
+                        <?php else: ?>
+                        <a href="<?php echo site_url('auth" class="login-link"> Login</a>
+                        <?php endif; ?> -->
+            </li>
+          </ul>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </header>
+
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:space="preserve"
+          style="display: none"
+        >
+          <symbol viewBox="0 0 36.1 25.8" id="button-arrow">
+            <line x1="0" y1="12.9" x2="34" y2="12.9"></line>
+            <polyline
+              fill="none"
+              points="22.2,1.1 34,12.9 22.2,24.7"
+            ></polyline>
+          </symbol>
+        </svg>
+
+        <div class="headline">
+          <div class="item-headline">
+            <h1>Uji Kemampuanmu di</h1>
+            <h1 class="auto-scroll">IT-Venture XIV</h1>
+            <div class="riseit-container">
+              <div style="--i: 1" class="hay-text">R</div>
+              <div style="--i: 2" class="hay-text">i</div>
+              <div style="--i: 3" class="hay-text">s</div>
+              <div style="--i: 4" class="hay-text">e&nbsp;</div>
+              <div style="--i: 5" class="hay-text">I</div>
+              <div style="--i: 6" class="hay-text">T</div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-<div class=container-itv>
-    <div class="lomba-itv">
-        <div class="lomba-card ping-bot">
-            <div class="page page-1">
-                <p> Battle Of Technology </p>
+        <div class="container-itv">
+          <div class="lomba-itv">
+            <div class="lomba-card ping-bot">
+              <div class="page page-1">
+                <p>Battle Of Technology</p>
                 <div class="daftar-button button-atas">
-                    <a href="<?php echo site_url('profile/index').'?tab=e_battle'; ?>" class="btn btn-arrow">
-                        <span>
-                            Daftar Sekarang
-                            <svg>
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" href="#button-arrow"></use>
-                            </svg>
-                        </span>
-                    </a>
+                  <a
+                    href=" site_url('profile/index').'?tab=e_battle'; ?>"
+                    class="btn btn-arrow"
+                  >
+                    <span>
+                      Daftar Sekarang
+                      <svg>
+                        <use
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          href="#button-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </a>
                 </div>
-            </div>
-            <div class="page page-2">
-                <div class="scroll-text"><span>SCROLL AKU UNTUK SELENGKAPNYA</span></div>
+              </div>
+              <div class="page page-2">
+                <div class="scroll-text">
+                  <span>SCROLL AKU UNTUK SELENGKAPNYA</span>
+                </div>
                 <div class="deskripsi-wrapper">
-                    <p class="deskripsi-lomba">Uji kemampuan kamu mengenai <span>Ilmu Komputer dan Programming</span>
-                        dengan mengikuti Battle Of Technology (BOT).</p>
-                    <h4>Ketentuan</h4>
-                    <hr>
-                    <div class="deskripsi-text-line"> <i class="symbol fas fa-user"></i><span>SMA/SMK/Sederajat<span>
+                  <p class="deskripsi-lomba">
+                    Uji kemampuan kamu mengenai
+                    <span>Ilmu Komputer dan Programming</span> dengan mengikuti
+                    Battle Of Technology (BOT).
+                  </p>
+                  <h4>Ketentuan</h4>
+                  <hr />
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fas fa-user"></i
+                    ><span>SMA/SMK/Sederajat</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fas fa-user-friends"></i
+                    ><span>3 orang</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fa fa-dollar-sign"></i><span>FREE!</span>
+                  </div>
+                  <h4>Hadiah</h4>
+                  <hr />
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#1</b
+                    ><span>Rp 2.000.000 + Doorprize</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#2</b
+                    ><span>Rp 1.500.000 + Doorprize</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#3</b
+                    ><span>Rp 1.000.000 + Doorprize</span>
+                  </div>
+                  <h4>Timeline</h4>
+                  <hr />
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Pendaftaran</b
+                    ><span class="right">7 Agustus 2021 </span>
+                  </div>
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Penyisihan</b
+                    ><span class="right">9 Oktober 2021</span>
+                  </div>
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Final</b
+                    ><span class="right">16 Oktober 2021</span>
+                  </div>
+                  <div class="button-bawah-wrapper">
+                    <div class="guide-book-button">
+                      <a
+                        href="http://tiny.cc/GuidebookITV_BOT"
+                        target="_blank"
+                        class="btn btn-arrow"
+                      >
+                        <span>Guide Book</span>
+                      </a>
                     </div>
-                    <div class="deskripsi-text-line"> <i class="symbol fas fa-user-friends"></i><span>3 orang<span>
-                    </div>
-                    <div class="deskripsi-text-line"> <i class="symbol fa fa-dollar-sign"></i><span>FREE!<span>
-                    </div>
-                    <h4>Hadiah</h4>
-                    <hr>
-                    <div class="deskripsi-text-line"> <b class="symbol">#1</b><span>Rp 2.000.000 + Doorprize<span>
-                    </div>
-                    <div class="deskripsi-text-line"> <b class="symbol">#2</b><span>Rp 1.500.000 + Doorprize<span>
-                    </div>
-                    <div class="deskripsi-text-line"> <b class="symbol">#3</b><span>Rp 1.000.000 + Doorprize<span>
-                    </div>
-                    <h4>Timeline</h4>
-                    <hr>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Pendaftaran</b><span class="right">7
-                            Agustus 2021 <span> </div>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Penyisihan</b></i><span
-                            class="right">9 Oktober 2021<span> </div>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Final</b></i><span class="right">16
-                            Oktober 2021<span> </div>
-                    <div class="button-bawah-wrapper">
-                        <div class="guide-book-button">
-                            <a href="http://tiny.cc/GuidebookITV_BOT" target="_blank" class="btn btn-arrow">
-                                <span>Guide Book</span>
-                            </a>
-                        </div>
 
-                        <div class="daftar-button">
-                            <a href="<?php echo site_url('profile/index').'?tab=e_battle'; ?>" class="btn btn-arrow">
-                                <span>
-                                    Daftar Sekarang
-                                    <svg>
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" href="#button-arrow"></use>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
+                    <div class="daftar-button">
+                      <a
+                        href=" site_url('profile/index').'?tab=e_battle'; ?>"
+                        class="btn btn-arrow"
+                      >
+                        <span>
+                          Daftar Sekarang
+                          <svg>
+                            <use
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              href="#button-arrow"
+                            ></use>
+                          </svg>
+                        </span>
+                      </a>
                     </div>
-
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="lomba-card ping-music">
-            <div class="page page-1">
-                <p> IT-Music </p>
+            <div class="lomba-card ping-music">
+              <div class="page page-1">
+                <p>IT-Music</p>
                 <div class="daftar-button button-atas">
-                    <a href="<?php echo site_url('profile/index').'?tab=e_music'; ?>" class="btn btn-arrow">
-                        <span>
-                            Daftar Sekarang
-                            <svg>
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" href="#button-arrow"></use>
-                            </svg>
-                        </span>
-                    </a>
+                  <a
+                    href=" site_url('profile/index').'?tab=e_music'; ?>"
+                    class="btn btn-arrow"
+                  >
+                    <span>
+                      Daftar Sekarang
+                      <svg>
+                        <use
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          href="#button-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </a>
                 </div>
-            </div>
-            <div class="page page-2">
-                <div class="scroll-text"><span>SCROLL AKU UNTUK SELENGKAPNYA</span></div>
+              </div>
+              <div class="page page-2">
+                <div class="scroll-text">
+                  <span>SCROLL AKU UNTUK SELENGKAPNYA</span>
+                </div>
                 <div class="deskripsi-wrapper">
-                    <p class="deskripsi-lomba">Asah kreatifitasmu dalam <span>Bidang Musik</span> dengan mengikuti
-                        IT-Music</p>
-                    <h4>Ketentuan</h4>
-                    <hr>
-                    <div class="deskripsi-text-line"> <i class="symbol fas fa-user"></i><span>Warga Indonesia<span>
+                  <p class="deskripsi-lomba">
+                    Asah kreatifitasmu dalam <span>Bidang Musik</span> dengan
+                    mengikuti IT-Music
+                  </p>
+                  <h4>Ketentuan</h4>
+                  <hr />
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fas fa-user"></i
+                    ><span>Warga Indonesia</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fas fa-user-friends"></i
+                    ><span>1-7 orang</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fa fa-dollar-sign"></i><span>FREE!</span>
+                  </div>
+                  <h4>Hadiah</h4>
+                  <hr />
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#1</b><span>Rp 1.500.000</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#2</b><span>Rp 1.000.000</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#3</b><span>Rp 750.000</span>
+                  </div>
+                  <h4>Timeline</h4>
+                  <hr />
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Pendaftaran</b
+                    ><span class="right">7 Agustus 2021 </span>
+                  </div>
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Maksimal Pengumpulan</b
+                    ><span class="right">4 Oktober 2021</span>
+                  </div>
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Pengumuman Juara</b
+                    ><span class="right">24 Oktober 2021</span>
+                  </div>
+                  <div class="button-bawah-wrapper">
+                    <div class="guide-book-button">
+                      <a
+                        href="http://tiny.cc/GuidebookITV_IT-Music"
+                        target="_blank"
+                        class="btn btn-arrow"
+                      >
+                        <span>Guide Book</span>
+                      </a>
                     </div>
-                    <div class="deskripsi-text-line"> <i class="symbol fas fa-user-friends"></i><span>1-7 orang<span>
-                    </div>
-                    <div class="deskripsi-text-line"> <i class="symbol fa fa-dollar-sign"></i><span>FREE!<span>
-                    </div>
-                    <h4>Hadiah</h4>
-                    <hr>
-                    <div class="deskripsi-text-line"> <b class="symbol">#1</b><span>Rp 1.500.000<span> </div>
-                    <div class="deskripsi-text-line"> <b class="symbol">#2</b><span>Rp 1.000.000<span> </div>
-                    <div class="deskripsi-text-line"> <b class="symbol">#3</b><span>Rp 750.000<span> </div>
-                    <h4>Timeline</h4>
-                    <hr>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Pendaftaran</b><span class="right">7
-                            Agustus 2021 <span> </div>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Maksimal Pengumpulan</b></i><span
-                            class="right">4 Oktober 2021<span> </div>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Pengumuman Juara</b></i><span
-                            class="right">24 Oktober 2021<span> </div>
-                    <div class="button-bawah-wrapper">
-                        <div class="guide-book-button">
-                            <a href="http://tiny.cc/GuidebookITV_IT-Music" target="_blank" class="btn btn-arrow">
-                                <span>Guide Book</span>
-                            </a>
-                        </div>
 
-                        <div class="daftar-button">
-                            <a href="<?php echo site_url('profile/index').'?tab=e_music'; ?>" class="btn btn-arrow">
-                                <span>
-                                    Daftar Sekarang
-                                    <svg>
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" href="#button-arrow"></use>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
+                    <div class="daftar-button">
+                      <a
+                        href=" site_url('profile/index').'?tab=e_music'; ?>"
+                        class="btn btn-arrow"
+                      >
+                        <span>
+                          Daftar Sekarang
+                          <svg>
+                            <use
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              href="#button-arrow"
+                            ></use>
+                          </svg>
+                        </span>
+                      </a>
                     </div>
-
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="lomba-card ping-paper">
-            <div class="page page-1">
-                <p> IT-Paper </p>
+            <div class="lomba-card ping-paper">
+              <div class="page page-1">
+                <p>IT-Paper</p>
                 <div class="daftar-button button-atas">
-                    <a href="<?php echo site_url('profile/index').'?tab=e_paper'; ?>" class="btn btn-arrow">
-                        <span>
-                            Daftar Sekarang
-                            <svg>
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" href="#button-arrow"></use>
-                            </svg>
-                        </span>
-                    </a>
+                  <a
+                    href=" site_url('profile/index').'?tab=e_paper'; ?>"
+                    class="btn btn-arrow"
+                  >
+                    <span>
+                      Daftar Sekarang
+                      <svg>
+                        <use
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          href="#button-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </a>
                 </div>
-            </div>
-            <div class="page page-2">
-                <div class="scroll-text"><span>SCROLL AKU UNTUK SELENGKAPNYA</span></div>
+              </div>
+              <div class="page page-2">
+                <div class="scroll-text">
+                  <span>SCROLL AKU UNTUK SELENGKAPNYA</span>
+                </div>
                 <div class="deskripsi-wrapper">
-                    <p class="deskripsi-lomba">Uji kemampuan kamu mengenai <span>Karya Tulis Ilmiah</span> dengan
-                        mengikuti IT-Paper</p>
-                    <h4>Ketentuan</h4>
-                    <hr>
-                    <div class="deskripsi-text-line"> <i class="symbol fas fa-user"></i><span>S1/D3/Sederajat<span>
+                  <p class="deskripsi-lomba">
+                    Uji kemampuan kamu mengenai
+                    <span>Karya Tulis Ilmiah</span> dengan mengikuti IT-Paper
+                  </p>
+                  <h4>Ketentuan</h4>
+                  <hr />
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fas fa-user"></i
+                    ><span>S1/D3/Sederajat</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fas fa-user-friends"></i
+                    ><span>1-3 orang</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <i class="symbol fa fa-dollar-sign"></i><span>FREE!</span>
+                  </div>
+                  <h4>Hadiah</h4>
+                  <hr />
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#1</b><span>Rp 2.000.000</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#2</b><span>Rp 1.500.000</span>
+                  </div>
+                  <div class="deskripsi-text-line">
+                    <b class="symbol">#3</b><span>Rp 1.000.000</span>
+                  </div>
+                  <h4>Timeline</h4>
+                  <hr />
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Pendaftaran</b
+                    ><span class="right">7 Agustus 2021 </span>
+                  </div>
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Maksimal Pengumpulan</b
+                    ><span class="right">4 Oktober 2021</span>
+                  </div>
+                  <div class="deskripsi-text-line timeline">
+                    <b class="justify">Final</b
+                    ><span class="right">16 Oktober 2021</span>
+                  </div>
+                  <div class="button-bawah-wrapper">
+                    <div class="guide-book-button">
+                      <a
+                        href="http://tiny.cc/GuidebookITV_IT-Paper"
+                        target="_blank"
+                        class="btn btn-arrow"
+                      >
+                        <span>Guide Book</span>
+                      </a>
                     </div>
-                    <div class="deskripsi-text-line"> <i class="symbol fas fa-user-friends"></i><span>1-3 orang<span>
-                    </div>
-                    <div class="deskripsi-text-line"> <i class="symbol fa fa-dollar-sign"></i><span>FREE!<span>
-                    </div>
-                    <h4>Hadiah</h4>
-                    <hr>
-                    <div class="deskripsi-text-line"> <b class="symbol">#1</b><span>Rp 2.000.000<span> </div>
-                    <div class="deskripsi-text-line"> <b class="symbol">#2</b><span>Rp 1.500.000<span> </div>
-                    <div class="deskripsi-text-line"> <b class="symbol">#3</b><span>Rp 1.000.000<span> </div>
-                    <h4>Timeline</h4>
-                    <hr>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Pendaftaran</b><span class="right">7
-                            Agustus 2021 <span> </div>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Maksimal Pengumpulan</b></i><span
-                            class="right">4 Oktober 2021<span> </div>
-                    <div class="deskripsi-text-line timeline"> <b class="justify">Final</b></i><span class="right">16
-                            Oktober 2021<span> </div>
-                    <div class="button-bawah-wrapper">
-                        <div class="guide-book-button">
-                            <a href="http://tiny.cc/GuidebookITV_IT-Paper" target="_blank" class="btn btn-arrow">
-                                <span>Guide Book</span>
-                            </a>
-                        </div>
 
-                        <div class="daftar-button">
-                            <a href="<?php echo site_url('profile/index').'?tab=e_paper'; ?>" class="btn btn-arrow">
-                                <span>
-                                    Daftar Sekarang
-                                    <svg>
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" href="#button-arrow"></use>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
+                    <div class="daftar-button">
+                      <a
+                        href=" site_url('profile/index').'?tab=e_paper'; ?>"
+                        class="btn btn-arrow"
+                      >
+                        <span>
+                          Daftar Sekarang
+                          <svg>
+                            <use
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              href="#button-arrow"
+                            ></use>
+                          </svg>
+                        </span>
+                      </a>
                     </div>
-
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="daftar-itv">
-        <div class="itv-guide-book button">
-            <a href="https://drive.google.com/drive/folders/1GuJ0DZSDXGbRLSXWGzrCbfBo-vQg-w5C" target="_blank"
-                class="btn">
+          </div>
+          <div class="daftar-itv">
+            <div class="itv-guide-book button">
+              <a
+                href="https://drive.google.com/drive/folders/1GuJ0DZSDXGbRLSXWGzrCbfBo-vQg-w5C"
+                target="_blank"
+                class="btn"
+              >
                 <span>Guide Book</span>
-            </a>
-        </div>
-        <div class="itv-daftar button">
-            <a href="<?php echo site_url('profile/index').'?tab=registration'; ?>" class="btn daftar-block">
+              </a>
+            </div>
+            <div class="itv-daftar button">
+              <a
+                href=" site_url('profile/index').'?tab=registration'; ?>"
+                class="btn daftar-block"
+              >
                 <span class="daftar-text">Daftar Sekarang</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="item sponsor">
-        <p>Our Sponsors</p>
-        <div class="sponsor-container">
-            <div class="big-wrapper">
-                <a class="sponsor-item sponsor-big" href="https://barito.tech/" target="_blank"><img
-                        class="sponsor-image" src="<?php echo base_url('public/pingfest/img/sponsor/bit.png'); ?>"
-                        alt=""></a>
-                <a class="sponsor-item sponsor-big" href="https://upscale.co.id/" target="_blank"><img
-                        class="sponsor-image" src="<?php echo base_url('public/pingfest/img/sponsor/upscale.png'); ?>"
-                        alt=""></a>
+              </a>
             </div>
-            <div class="small-wrapper">
+          </div>
+
+          <div class="item sponsor">
+            <p>Our Sponsors</p>
+            <div class="sponsor-container">
+              <div class="big-wrapper">
+                <a
+                  class="sponsor-item sponsor-big"
+                  href="https://barito.tech/"
+                  target="_blank"
+                  ><img
+                    class="sponsor-image"
+                    src="public/pingfest/img/sponsor/bit.png"
+                    alt=""
+                /></a>
+                <a
+                  class="sponsor-item sponsor-big"
+                  href="https://upscale.co.id/"
+                  target="_blank"
+                  ><img
+                    class="sponsor-image"
+                    src="public/pingfest/img/sponsor/upscale.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="small-wrapper">
                 <div class="small-section">
-                    <a class="sponsor-item sponsor-small" href="https://byu.id/" target="_blank"><img
-                            class="sponsor-image" src="<?php echo base_url('public/pingfest/img/sponsor/byu.png'); ?>"
-                            alt=""></a>
-                    <a class="sponsor-item sponsor-small" href=" https://dewaweb.com" target="_blank"><img
-                            class="sponsor-image"
-                            src="<?php echo base_url('public/pingfest/img/sponsor/dewaweb.png'); ?>" alt=""></a>
+                  <a
+                    class="sponsor-item sponsor-small"
+                    href="https://byu.id/"
+                    target="_blank"
+                    ><img
+                      class="sponsor-image"
+                      src="public/pingfest/img/sponsor/byu.png"
+                      alt=""
+                  /></a>
+                  <a
+                    class="sponsor-item sponsor-small"
+                    href=" https://dewaweb.com"
+                    target="_blank"
+                    ><img
+                      class="sponsor-image"
+                      src="public/pingfest/img/sponsor/dewaweb.png"
+                      alt=""
+                  /></a>
                 </div>
                 <div class="small-section">
-
-                    <a class="sponsor-item sponsor-small" href="https://pahamify.com/" target="_blank"><img
-                            class="sponsor-image"
-                            src="<?php echo base_url('public/pingfest/img/sponsor/pahamify.png'); ?>" alt=""></a>
-                    <a class="sponsor-item sponsor-small" href="https://www.instagram.com/whoknowswhat.id/"
-                        target="_blank"><img class="sponsor-image"
-                            src="<?php echo base_url('public/pingfest/img/sponsor/wkw.png'); ?>" alt=""></a>
+                  <a
+                    class="sponsor-item sponsor-small"
+                    href="https://pahamify.com/"
+                    target="_blank"
+                    ><img
+                      class="sponsor-image"
+                      src="public/pingfest/img/sponsor/pahamify.png"
+                      alt=""
+                  /></a>
+                  <a
+                    class="sponsor-item sponsor-small"
+                    href="https://www.instagram.com/whoknowswhat.id/"
+                    target="_blank"
+                    ><img
+                      class="sponsor-image"
+                      src="public/pingfest/img/sponsor/wkw.png"
+                      alt=""
+                  /></a>
                 </div>
-
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <footer class="footer">
+      </div>
+      <footer class="footer">
         <div class="footer-container">
           <div class="row">
             <div class="footer-col logo">
@@ -518,6 +774,5 @@
         </div>
       </footer>
     </div>
-
-
-    <script src="<?php echo base_url('public/pingfest/js/itv.min.js'); ?>"></script>
+  </body>
+</html>

@@ -36,7 +36,8 @@
   max-width: 50%;
 }
 
-.sponsor-logo {
+.sponsor-item {
+  display: block !important;
   margin: 2.5rem;
 }
 
@@ -81,12 +82,12 @@
   border: 3px solid var(--dark-color);
 }
 
-.sponsor-logo:hover .sponsor-image {
+.sponsor-item:hover .sponsor-image {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 1280px) {
-  .sponsor-logo {
+  .sponsor-item {
     margin: 1rem;
   }
 }

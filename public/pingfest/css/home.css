@@ -27,7 +27,7 @@ body {
 
   grid-template-areas:
     'headline headline'
-    /* 'countdown countdown' */
+    'countdown countdown'
     'logo-itv text-itv'
     'text-semnas logo-semnas'
     'dokumentasi dokumentasi'
